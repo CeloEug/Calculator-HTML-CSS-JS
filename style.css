@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    overflow: hidden
+}
+
+.container {
+    width: 100%;
+    padding: 150px;
+    background: rgb(113, 23, 234);
+    background: linear-gradient(50deg, rgba(113, 23, 234, 1) 0%, rgba(234, 96, 96, 1) 120%);
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 440px;
+    border-radius: 20px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.451);
+    background: rgb(29, 24, 36);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    padding: 12px;
+}
+
+input[type="text"] {
+    grid-column: span 3;
+    padding: 0px 20px;
+    border-radius: 30px;
+    background-color: rgba(42, 36, 50, 0.241);
+    font-weight: bold;
+    border: none;
+    border-style: inset;
+    border-color: rgba(29, 24, 36, 0.312);
+    pointer-events: none;
+    font-size: 18px;
+    text-align: right;
+    color: white;
+}
+
+input[type="button"] {
+    font-size: 18px;
+    border-radius: 45px;
+    background-color: rgb(29, 24, 36);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-style: outset;
+    border-color: rgba(29, 24, 36, 0.312);
+}
+
+input[type="button"]:hover {
+    background-color: rgba(38, 33, 46, 0.696);
+}
+
+input[type="button"]:active {
+    border-style: inset;
+}
+
+input[class="operation"]:hover {
+    background-color: rgba(234, 96, 96, 0.062);
+}
+
+input[class="result"]:hover {
+    background-color: rgba(114, 23, 234, 0.092)
+}
